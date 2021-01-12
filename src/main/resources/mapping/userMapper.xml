@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="summer2020.newslayui.newsmanger.mapper.UserMapper">
+    <resultMap id="User" type="summer2020.newslayui.newsmanger.entity.User">
+        <result column="username" jdbcType="VARCHAR" property="username"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="password" jdbcType="DOUBLE" property="password"/>
+        <result column="age" jdbcType="DOUBLE" property="age"/>
+        <result column="Tel" jdbcType="VARCHAR" property="Tel"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="IP" jdbcType="VARCHAR" property="IP"/>
+        <result column="sex" jdbcType="VARCHAR" property="sex"/>
+        <result column="superRoot" jdbcType="VARCHAR" property="superRoot"/>
+    </resultMap>
+
+    <select id="userLogin" resultType="summer2020.newslayui.newsmanger.entity.User">
+        select username
+        from user wherer password=#{password}
+    </select>
+
+    <insert id="userRegister">
+
+    </insert>
+
+</mapper>

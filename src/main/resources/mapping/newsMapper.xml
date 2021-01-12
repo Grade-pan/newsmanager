@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="summer2020.newslayui.newsmanger.mapper.NewsMapper">
+    <resultMap id="User" type="summer2020.newslayui.newsmanger.entity.News">
+        <result column="ID" jdbcType="INTEGER" property="ID"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="author" jdbcType="DOUBLE" property="author"/>
+        <result column="type" jdbcType="DOUBLE" property="type"/>
+        <result column="date" jdbcType="VARCHAR" property="date"/>
+        <result column="content" jdbcType="VARCHAR" property="content"/>
+        <result column="imgUrl" jdbcType="VARCHAR" property="imgUrl"/>
+    </resultMap>
+
+    <select id="selectNews" resultType="summer2020.newslayui.newsmanger.entity.News">
+
+    </select>
+
+    <insert id="submitNews">
+
+    </insert>
+
+</mapper>
