@@ -19,6 +19,10 @@
         from user wherer password=#{password}
     </select>
 
+    <select id="selectByPage" resultType="summer2020.newslayui.newsmanger.entity.User">
+        select * from user
+    </select>
+
     <insert id="userRegister">
 
     </insert>

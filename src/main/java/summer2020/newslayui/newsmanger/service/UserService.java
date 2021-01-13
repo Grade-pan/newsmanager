@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import summer2020.newslayui.newsmanger.entity.User;
 import summer2020.newslayui.newsmanger.mapper.UserMapper;
 
+import java.util.List;
+
 /**
  * Author: PXY
  * Email: 1817865166@qq.com
@@ -18,4 +20,10 @@ public class UserService {
     public User userLogin() {
         return userMapper.userLogin();
     }
+
+
+    public List<User> selectByPage() {
+        return userMapper.selectByPage();
+    }
+
 }
